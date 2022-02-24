@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Node.js x HTML</title>
+    <style>
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: rgb(111, 31, 143);
+        }
+
+        .center {
+            width: 100%;
+            height: 50%;
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        p {
+            font-size:1.5em;
+        }
+        .buttonsBox {
+            display:flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .buttonsBox > button{
+            padding:1.2em;
+            
+        }
+        #ROCK,#PAPER,#SCISSORS {
+            color:white;
+            margin-left: 5px;
+            margin-right: 5px;
+            border:0.16em solid white;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-align: center;
+            transition:0.2s;
+            font-weight: 400;
+            background:none;
+        }
+        #ROCK:hover,#PAPER:hover,#SCISSORS:hover { 
+            border:2px solid grey;
+            transition:0.2s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Rock, Paper, Scissors!</h1>
+        <p>Choose 🗿, 📃, or ✂️</p>
+    </div>
+
+    <div class="buttonsBox">
+        <button id="ROCK" class='options'>🗿ROCK🗿</button>
+        <button id="PAPER" class='options'>📃PAPER📃</button>
+        <button id="SCISSORS" class='options'>✂️SCISSORS✂️</button>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+
+</html>
