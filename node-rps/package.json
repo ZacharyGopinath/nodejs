@@ -1,0 +1,12 @@
+{
+  "name": "node-rps",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissors made with Node.js",
+  "main": "HTML-File.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Zachary Gopinath",
+  "license": "ISC"
+}
