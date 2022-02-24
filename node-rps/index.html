@@ -27,44 +27,73 @@
             height: 50%;
             margin: 0;
             position: absolute;
-            top: 60%;
+            top: 70%;
             left: 50%;
-            transform: translate(-50%, -60%);
+            transform: translate(-50%, -70%);
             color: white;
             font-family: sans-serif;
             text-align: center;
         }
 
         p {
-            font-size:1.5em;
+            font-size: 1.5em;
         }
+
         .buttonsBox {
-            display:flex;
+            display: flex;
             position: absolute;
-            top: 50%;
+            top: 48%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -48%);
         }
-        .buttonsBox > button{
-            padding:1.2em;
-            
+
+        .buttonsBox>button {
+            padding: 1.2em;
+
         }
-        #ROCK,#PAPER,#SCISSORS {
-            color:white;
+
+        #ROCK,
+        #PAPER,
+        #SCISSORS {
+            color: white;
             margin-left: 5px;
             margin-right: 5px;
-            border:0.16em solid white;
+            border: 0.16em solid white;
             box-sizing: border-box;
             text-decoration: none;
             text-align: center;
-            transition:0.2s;
+            transition: 0.2s;
             font-weight: 400;
-            background:none;
+            background: none;
+            font-size: 1.1em;
         }
-        #ROCK:hover,#PAPER:hover,#SCISSORS:hover { 
-            border:2px solid grey;
-            transition:0.2s;
+
+        #ROCK:hover,
+        #PAPER:hover,
+        #SCISSORS:hover {
+            border: 0.16em solid #DE1A1A;
+            transition: 0.2s;
             cursor: pointer;
+        }
+
+        .responseBox {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            border: 0.16em solid white;
+            padding: 1.2em;
+            font-family: sans-serif;
+            font-weight: 400;
+            color: white;
+            font-size: 0.9em;
+            transition: 0.2s;
+            user-select: none;
+        }
+
+        .responseBox:hover {
+            border: 0.16em solid #DE1A1A;
+            transition: 0.2s;
         }
     </style>
 </head>
@@ -73,12 +102,16 @@
     <div class="center">
         <h1>Rock, Paper, Scissors!</h1>
         <p>Choose 🗿, 📃, or ✂️</p>
+
     </div>
 
     <div class="buttonsBox">
         <button id="ROCK" class='options'>🗿ROCK🗿</button>
         <button id="PAPER" class='options'>📃PAPER📃</button>
         <button id="SCISSORS" class='options'>✂️SCISSORS✂️</button>
+    </div>
+    <div class="responseBox">
+        <p id="result">Response: <span id="responseSpan">...</span></p>
     </div>
 
     <script src='index.js'></script>
