@@ -1,6 +1,5 @@
 const http = require('http');
 const fs = require('fs').promises;
-const index = require('./public/index');
 
 const host = 'localhost';
 const port = 8080;
@@ -26,4 +25,3 @@ fs.readFile(__dirname + '/index.html').then(
     console.error(`Error: ${err}`);
     process.exit(1)
 })
-index.script();
