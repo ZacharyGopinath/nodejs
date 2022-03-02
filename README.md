@@ -5,4 +5,5 @@ Current projects:
 
 - setting up a basic server, loading a simple HTML page✅
 - rock, paper, scissors✅
-- working with express.js (WIP)⌛
+- working with express.js✅
+- further examples with express.js(WIP)⌛
